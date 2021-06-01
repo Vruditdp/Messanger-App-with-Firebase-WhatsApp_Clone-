@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:fitsSystemWindows="true"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/custom_profile_image"
+        android:transitionName="ChatImageTransition"
+        android:layout_width="45dp"
+        android:layout_height="53dp"
+        android:src="@drawable/profile_image"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:cropToPadding="true"
+        android:layout_marginLeft="0dp"
+        android:paddingLeft="0dp"
+        android:layout_marginBottom="6dp"
+        android:paddingBottom="7dp"
+        android:layout_marginTop="9dp"/>
+
+    <TextView
+        android:id="@+id/custom_profile_name"
+        android:transitionName="ChatUserNameTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/custom_profile_image"
+        android:layout_marginTop="9dp"
+        android:layout_marginStart="8dp"
+        android:text="Display user name"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/custom_user_last_seen"
+        android:transitionName="ChatUserStatusTransition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/custom_profile_name"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="53dp"
+        android:text="Last Seen"
+        android:textSize="12.5sp"
+        android:textColor="@android:color/background_light"
+
+        />
+
+
+</RelativeLayout>

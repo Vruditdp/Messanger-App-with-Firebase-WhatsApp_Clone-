@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_height="wrap_content">
+
+   <!-- <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/message_profile_image"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profile_image"/>  -->
+
+    <ImageView
+        android:id="@+id/corner_of_receiver"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="-13.15dp"
+        android:background="@null"
+        android:scaleX="-1.5"
+        android:src="@drawable/corner_of_receiver" />
+
+    <TextView
+        android:id="@+id/receiver_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="2dp"
+        android:layout_marginStart="3.6dp"
+        android:layout_toEndOf="@+id/corner_of_receiver"
+        android:background="@drawable/receiver_messages_layout"
+        android:text="receiver messages here"
+        android:padding="7dp"
+        android:textSize="14sp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"/>
+
+   <ImageView
+        android:id="@+id/message_sender_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+       android:layout_marginEnd="10dp"
+        android:scaleType="centerCrop"/>
+
+    <ImageView
+        android:id="@+id/message_receiver_image_view"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="11dp"
+        android:scaleType="centerCrop"/>
+
+    <!--
+    android:layout_toEndOf="@+id/message_profile_image"
+    -->
+
+    <TextView
+        android:id="@+id/sender_message_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/corner_of_sender"
+        android:layout_marginTop="7.5dp"
+        android:layout_marginEnd="-4dp"
+        android:layout_alignParentTop="@+id/receiver_message_text"
+        android:background="@drawable/sender_messages_layout"
+        android:text="sender messages"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:padding="7dp"/>
+
+    <ImageView
+        android:id="@+id/corner_of_sender"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="-6dp"
+        android:layout_marginTop="3.6dp"
+        android:background="@null"
+        android:scaleX="1.5"
+        android:src="@drawable/corner_of_send"/>
+
+
+
+</RelativeLayout>
+
+    <!--android:layout_alignParentEnd="true" -->
